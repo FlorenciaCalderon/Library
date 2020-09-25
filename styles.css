@@ -15,7 +15,7 @@ body {
 }
 
 .button {
-	background-color: rgb(96, 96, 221);
+	background-color: rgba(52, 152, 219, 1);
 	border: 2px solid white;
 	border-radius: 30px;
 	text-decoration: none;
@@ -28,8 +28,8 @@ body {
 
 .button:hover {
     background-color: white;
-    color: rgb(96, 96, 221);
-    border: 2px solid rgb(96, 96, 221);
+    color:rgba(52, 152, 219, 1);
+    border: 2px solid rgba(52, 152, 219, 1);
 }
 
 
@@ -85,7 +85,7 @@ table {
   }
   
   th {
-	background-color: rgb(96, 96, 221); 
+	background-color:rgba(52, 152, 219, 1); 
 	padding: 8px;
 	text-align: center;
 	border-bottom: 2px solid white;
@@ -115,7 +115,7 @@ table {
   
  
   .btn:hover {
-	background-color: rgb(96, 96, 221); 
+	background-color:rgba(52, 152, 219, 1); 
   }
 
 
