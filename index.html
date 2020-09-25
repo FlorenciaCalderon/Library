@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	
+<div class="button-container">
+	<a href="#" id="add" class="button">Add Book</a>
+</div>
+
+
+<!-- PopUp Section -->
+
+<div class="pop-up">
+<div class="pop-up-content">
+
+	<div class="close">+</div>
+		<input type="text" id="name" placeholder="Name">
+		<input type="text" id="author" placeholder="Author">
+		<input type="number" id="pages" placeholder="Number of Pages">
+		<a href="#" id="submit" class="button">Submit</a>
+	
+
+</div>
+</div>
+
+<!-- Table Seccion -->
+
+<table class="table">
+	<thead>
+	  <tr>
+		<th>Title</th>
+		<th>Author</th>
+		<th>Pages</th>
+		<th>Read</th>
+		<th></th>
+	  </tr>
+	</thead>
+	<tbody id="book-library"></tbody>
+  </table>
+
+
+<script src="script.js"></script>
+</body>
+
+
+</html>
