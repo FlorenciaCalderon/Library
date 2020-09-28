@@ -10,18 +10,18 @@ document.querySelector('.close').addEventListener("click", closePopUp);
 
 //SUBMIT BUTTON
 
-function Book(title,author,pages) {
+function Book(title,author,year) {
 	this.title = title;
 	this.author = author;
-  this.pages = pages;
+  this.pages = year;
   }
 
 
 document.getElementById('submit').addEventListener("click", function() {
 
-let book= new Book(document.getElementById('name').value,
+let book= new Book(document.getElementById('title').value,
                   document.getElementById('author').value,
-                  document.getElementById('pages').value);     
+                  document.getElementById('year').value);     
                               
 
 addBookToUI(book);
@@ -45,7 +45,7 @@ const row = document.createElement('tr');
   row.innerHTML = `
       <td>${book.title}</td>
       <td>${book.author}</td>
-      <td>${book.pages}</td>
+      <td>${book.year}</td>
       <td><div class="container"><div class="toggle-btn"><div class="inner-circle"></div></div></div>
       <td><button class="btn"><i class="fa fa-trash"></i></button></td>
     `;
@@ -70,9 +70,9 @@ row.addEventListener("click", e => {
   }
 
 function clearFields() {
-    document.getElementById('name').value = '';
+    document.getElementById('title').value = '';
     document.getElementById('author').value = '';
-    document.getElementById('pages').value = '';
+    document.getElementById('year').value = '';
   }
 
 function closePopUp() {
