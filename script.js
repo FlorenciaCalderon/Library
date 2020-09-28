@@ -13,7 +13,7 @@ document.querySelector('.close').addEventListener("click", closePopUp);
 function Book(title,author,year) {
 	this.title = title;
 	this.author = author;
-  this.pages = year;
+  this.year = year;
   }
 
 
